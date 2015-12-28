@@ -4,9 +4,9 @@ module OmniAuth
   module Strategies
     class Misoca < OmniAuth::Strategies::OAuth2
       option :client_options, {
-        site: 'https://app.misoca.jp/oauth2',
-        authorize_url: '/authorize',
-        token_url: '/token',
+        site: 'https://app.misoca.jp',
+        authorize_url: '/oauth2/authorize',
+        token_url: '/oauth2/token',
       }
       option :provider_ignores_state, true
 
