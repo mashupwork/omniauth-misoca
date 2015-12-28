@@ -44,5 +44,5 @@ group :development, :test do
 end
 
 gem 'dotenv-rails'
-gem 'omniauth-timecrowd', path: '../'
-#gem 'omniauth-timecrowd', github: 'ruffnote/omniauth-timecrowd'
+gem 'omniauth-misoca', path: '../'
+#gem 'omniauth-misoca', github: 'ruffnote/omniauth-misoca'

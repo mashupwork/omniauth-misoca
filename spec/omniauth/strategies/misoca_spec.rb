@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OmniAuth::Strategies::TimeCrowd do  
+describe OmniAuth::Strategies::Misoca do  
   let(:access_token) { stub('AccessToken', options: {}) }
   let(:parsed_response) { stub('ParsedResponse') }
   let(:response) { stub('Response', parsed: parsed_response) }
@@ -9,7 +9,7 @@ describe OmniAuth::Strategies::TimeCrowd do
   let(:local_authorize_url) { 'https://localhost:3000/oauth/authorize' }
   let(:local_token_url)     { 'https://localhost:3000/oauth/token' }
   let(:local) do
-    OmniAuth::Strategies::TimeCrowd.new('GITHUB_KEY', 'GITHUB_SECRET',
+    OmniAuth::Strategies::Misoca.new('GITHUB_KEY', 'GITHUB_SECRET',
       {
         client_options: {
           site: local_site,
@@ -21,7 +21,7 @@ describe OmniAuth::Strategies::TimeCrowd do
   end
 
   subject do
-    OmniAuth::Strategies::TimeCrowd.new({})
+    OmniAuth::Strategies::Misoca.new({})
   end
 
   before do
@@ -30,15 +30,15 @@ describe OmniAuth::Strategies::TimeCrowd do
 
   context "client options" do
     it 'should have correct site' do
-      subject.options.client_options.site.should eq("https://api.timecrowd.net")
+      subject.options.client_options.site.should eq("https://app.misoca.jp")
     end
 
     it 'should have correct authorize url' do
-      subject.options.client_options.authorize_url.should eq('/oauth/authorize')
+      subject.options.client_options.authorize_url.should eq('/oauth2/authorize')
     end
 
     it 'should have correct token url' do
-      subject.options.client_options.token_url.should eq('/oauth/token')
+      subject.options.client_options.token_url.should eq('/oauth2/token')
     end
 
     describe "should be overrideable" do

@@ -6,10 +6,10 @@
 
   <ul>
     <% @teams.each do |team| %>
-      <li><%= link_to team['name'], "#{ENV['TIMECROWD_SITE']}/teams/#{team['id']}", target: '_blank' %></li>
+      <li><%= link_to team['name'], "#{ENV['MISOCA_SITE']}/teams/#{team['id']}", target: '_blank' %></li>
     <% end %>
   </ul>
 <% else %>
-  <%= link_to 'Sign in', '/auth/timecrowd' %>
+  <%= link_to 'Sign in', '/auth/misoca' %>
 <% end %>
 
