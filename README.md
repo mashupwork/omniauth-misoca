@@ -1,18 +1,18 @@
-# Omniauth::Timecrowd
+# Omniauth::Misoca
 
-[![Code Climate](https://codeclimate.com/github/ruffnote/omniauth-timecrowd/badges/gpa.svg)](https://codeclimate.com/github/ruffnote/omniauth-timecrowd)
-[![Test Coverage](https://codeclimate.com/github/ruffnote/omniauth-timecrowd/badges/coverage.svg)](https://codeclimate.com/github/ruffnote/omniauth-timecrowd/coverage)
+[![Code Climate](https://codeclimate.com/github/ruffnote/omniauth-misoca/badges/gpa.svg)](https://codeclimate.com/github/ruffnote/omniauth-misoca)
+[![Test Coverage](https://codeclimate.com/github/ruffnote/omniauth-misoca/badges/coverage.svg)](https://codeclimate.com/github/ruffnote/omniauth-misoca/coverage)
 
 ## API Document
 
-https://timecrowd.net/apidoc
+http://doc.misoca.jp/
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'omniauth-timecrowd', github: 'ruffnote/omniauth-timecrowd'
+gem 'omniauth-misoca', github: 'ruffnote/omniauth-misoca'
 ```
 
 And then execute:
@@ -21,20 +21,20 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-timecrowd
+    $ gem install omniauth-misoca
 
 ## Example
 
-Register application on https://timecrowd.net/oauth/applications/new.  
-(Redirect URI: `http://localhost:PORT/auth/timecrowd/callback`)
+Register application on https://app.misoca.jp/oauth2/applications/new.  
+(Redirect URI: `http://localhost:PORT/auth/misoca/callback`)
 
 ```
 $ cd example
 
 # .env
-TIMECROWD_CLIENT_ID="ID"
-TIMECROWD_CLIENT_SECRET="SECRET"
-TIMECROWD_SITE="https://timecrowd.net/"
+MISOCA_CLIENT_ID="ID"
+MISOCA_CLIENT_SECRET="SECRET"
+MISOCA_SITE="https://app.misoca.jp/"
 
 $ rails s -p PORT
 $ open http://localhost:PORT/

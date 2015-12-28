@@ -1,7 +1,7 @@
 PATH
   remote: ../
   specs:
-    omniauth-timecrowd (0.1.0)
+    omniauth-misoca (0.1.0)
       omniauth (>= 1.1.1)
       omniauth-oauth2 (>= 1.1.1)
 
@@ -174,7 +174,7 @@ DEPENDENCIES
   dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails
-  omniauth-timecrowd!
+  omniauth-misoca!
   rails (= 4.2.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
