@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth/omniauth/version'
+require 'omniauth/misoca/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "omniauth-omniauth"
-  spec.version       = Omniauth::Omniauth::VERSION
+  spec.version       = Omniauth::Misoca::VERSION
   spec.authors       = ["Ruffnote Inc."]
   spec.email         = ["nishiko@ruffnote.com"]
 
