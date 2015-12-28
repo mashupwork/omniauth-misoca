@@ -2,11 +2,11 @@ require 'omniauth-oauth2'
 
 module OmniAuth
   module Strategies
-    class TimeCrowd < OmniAuth::Strategies::OAuth2
+    class Misoca < OmniAuth::Strategies::OAuth2
       option :client_options, {
-        site: 'https://api.timecrowd.net',
-        authorize_url: '/oauth/authorize',
-        token_url: '/oauth/token',
+        site: 'https://app.misoca.jp/oauth2',
+        authorize_url: '/authorize',
+        token_url: '/token',
       }
       option :provider_ignores_state, true
 
@@ -14,8 +14,8 @@ module OmniAuth
 
       info do
         {
-          'nickname': raw_info['nickname'],
-          'image': raw_info['image'],
+          nickname: raw_info['nickname'],
+          image: raw_info['image'],
         }
       end
 
@@ -31,5 +31,5 @@ module OmniAuth
   end
 end
 
-OmniAuth.config.add_camelization 'timecrowd', 'TimeCrowd'
+OmniAuth.config.add_camelization 'misoca', 'Misoca'
 

@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth/timecrowd/version'
+require 'omniauth/omniauth/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "omniauth-timecrowd"
-  spec.version       = Omniauth::Timecrowd::VERSION
+  spec.name          = "omniauth-omniauth"
+  spec.version       = Omniauth::Omniauth::VERSION
   spec.authors       = ["Ruffnote Inc."]
-  spec.email         = ["timecrowd@ruffnote.com"]
+  spec.email         = ["nishiko@ruffnote.com"]
 
-  spec.summary       = %q{Official OmniAuth strategy for TimeCrowd.}
-  spec.description   = %q{Official OmniAuth strategy for TimeCrowd.}
-  spec.homepage      = "https://github.com/ruffnote/omniauth-timecrowd"
+  spec.summary       = %q{Unofficial OmniAuth strategy for Misoca.}
+  spec.description   = %q{Unofficial OmniAuth strategy for Misoca.}
+  spec.homepage      = "https://github.com/pandeiro245/omniauth-misoca"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
